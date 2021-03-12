@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Over</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="profile-icon" src="./assets/mumbai.png" height="150px" alt="Mumbai Indians">
+                <span class="name" id="team-1-name"></span>
+                <div class="row" class="round-runs" id="team-1-round-runs">
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                </div>
+            </div>
+            <div class="col">
+                <h2>
+                    <span id="team-1-score"></span>
+                    <span>-</span>
+                    <span id="team-2-score"></span>
+                </h2>
+            </div>
+            <div class="col">
+                <img class="profile-icon" src="./assets/chennai.png" height="150px" alt="Chennai Super Kings">
+                <span class="name" id="team-2-name"></span>
+                <div class="row" class="round-runs" id="team-2-round-runs">
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                    <span class="col">-</span>
+                </div>
+            </div>
+        </div>
+            
+            <!-- Result -->
+        <div class="row"> 
+            <button id="striker-button" onclick="ButtonClick()"></button>
+        </div>
+        <div class="row" id="result" hidden></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

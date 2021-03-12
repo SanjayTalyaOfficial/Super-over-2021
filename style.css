@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    background: rebeccapurple;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: antiquewhite;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 20px;
+    align-self: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .row {
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.profile-icon {
+    border-radius: 50%;
+    border: 2px solid bisque;
+}
+
+.name {
+    margin: 20px 0;
+    font-size: x-large ;
+    font-weight: bold;
+}
+
+.round-runs {
+    font-size: xx-large;
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+#striker-button {
+    width: 300px;
+    border-radius: 25%;
+    border: none;
+    font-size: larger;
+    color: white;
+    background: linear-gradient(135deg, #c02425, #f0cb35);
+    padding: 10px;margin-top: 50px;
+    outline: none;
+}
+
+#striker-button:hover {
+    box-shadow: 0 0 10px ;
+}
+
+.score{
+   margin: -80px 0 0;
+   font-size: larger; 
+}
+
+.score>span{
+    margin: 0 5px;
+}
+
+#result{
+    margin-top: 50px;
+    background: linear-gradient(135deg, red, yellow);
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+    background-clip: text;
+
+}
