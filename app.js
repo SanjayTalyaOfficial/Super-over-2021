@@ -24,7 +24,7 @@ window.onload = () => {
 }
 // doubt
 let selectTurn = () => {
-    turn = Math.round(Manth.random())+1;
+    turn = Math.round(Math.random())+1;
 }
 
 let updateButtonText = () => {
@@ -57,7 +57,7 @@ let updateNames = () => {
 }
 
 function ButtonClick() {
-    var runs = score[Math.floor(Math.randon()*score.length)];
+    var runs = score[Math.floor(Math.random()*score.length)];
     runs = runs === 5 ? "W" : runs;
     if(turn === 1){
         team1.runs.push(runs);
